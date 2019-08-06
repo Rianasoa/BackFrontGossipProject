@@ -1,0 +1,12 @@
+<div class="card text-center">
+  <div class="card-header">
+    <%= @gossip_show.user.first_name%>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><%= @gossip_show.title%></h5>
+    <p class="card-text"><%= @gossip_show.content%></p>
+    <%= link_to "#{@gossip_show.user.first_name}", users_user_id_path(@gossip_show.user.id)%>
+  <div class="card-footer text-muted">
+   <%= @gossip_show.created_at%>
+  </div>
+</div>

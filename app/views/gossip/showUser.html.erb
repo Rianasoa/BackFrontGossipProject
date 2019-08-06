@@ -1,0 +1,11 @@
+<div class="card text-center">
+  <div class="card-header">
+    <strong><i><%= @user_show.first_name%></i></strong>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><strong>A propos de l'auteur: </strong><%= @user_show.description%></h5>
+    <p class="card-text">Il vient de <strong><%= @user_show.city.name%></strong></p>
+  </div>
+  <div class="card-footer text-muted">
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gossip Project</title>
+</head>
+<body>
+  <h2 style="text-align: center;">Voici la liste des potins</h2>
+  <%= @gossips.each_with_index do |gossip, index|%>
+<div class="card text-center">
+  <div class="card-header">
+    <%= gossip.user.first_name%>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><%= gossip.title %></h5>
+    <%= link_to "Show", gossips_gossip_id_path(gossip.id)%>
+  </div>
+
+</div>
+
+<%end%>
+  
+</body>
+</html>
